@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3D6D47B9-BCC8-4EC0-9686-D1237BE1C99A}</ProjectGuid>
+    <ProjectGuid>{D75B54B6-9610-409C-B40B-C63BA374D452}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>PracownicyApp</RootNamespace>
     <AssemblyName>PracownicyApp</AssemblyName>
@@ -52,11 +52,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kurs_2_2019DataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Kurs_2_2019DataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -71,17 +66,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Kurs_2_2019DataSet.xsc">
-      <DependentUpon>Kurs_2_2019DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Kurs_2_2019DataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Kurs_2_2019DataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Kurs_2_2019DataSet.xss">
-      <DependentUpon>Kurs_2_2019DataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

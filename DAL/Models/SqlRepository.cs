@@ -20,9 +20,12 @@ namespace DAL.Models
             List<Pracownik> lista = new List<Pracownik>();
             using (sqlConn = new SqlConnection(conn))
             {
-                string sql = "SELECT * FROM Pracownicy";
+                string sql = "SELECT * FROM Pracownicy order by Nazwisko ";
                 SqlCommand cmd = new SqlCommand(sql,sqlConn);
                 sqlConn.Open();
+              //  if (sqlConn.State == ConnectionState.Open)
+                //{}
+              
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
